@@ -12,5 +12,6 @@
   </Folder>
   <Folder Name="/FlashOWare.Analyzers/test/">
     <Project Path="FlashOWare.Analyzers/test/FlashOWare.Analyzers.CSharp.Roslyn.Tests/FlashOWare.Analyzers.CSharp.Roslyn.Tests.csproj" />
+    <Project Path="FlashOWare.Analyzers/test/FlashOWare.Analyzers.CSharp.Roslyn.Tests/FlashOWare.Analyzers.CSharp.Roslyn4_13.Tests.csproj" />
   </Folder>
 </Solution>
