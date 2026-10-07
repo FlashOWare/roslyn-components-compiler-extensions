@@ -1,0 +1,6 @@
+@FlashOWare.Analyzers.CSharp.Demo.WebApiApp_HostAddress = http://localhost:5116
+
+GET {{FlashOWare.Analyzers.CSharp.Demo.WebApiApp_HostAddress}}/
+Accept: application/json
+
+###
