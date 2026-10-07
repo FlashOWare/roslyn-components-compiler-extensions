@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "roslyn": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\..\\demo\\FlashOWare.Analyzers.CSharp.Demo.WebApiApp\\FlashOWare.Analyzers.CSharp.Demo.WebApiApp.csproj"
+    }
+  }
+}
