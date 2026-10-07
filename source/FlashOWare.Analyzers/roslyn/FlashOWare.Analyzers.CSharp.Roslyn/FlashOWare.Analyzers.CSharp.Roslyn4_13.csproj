@@ -2,8 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyTitle>FlashOWare.Analyzers.CSharp.Roslyn</AssemblyTitle>
-    <RootNamespace>FlashOWare.Analyzers.CSharp.Roslyn</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsRoslynComponent>true</IsRoslynComponent>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);CA1707</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);ROSLYN4_13_OR_GREATER</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>

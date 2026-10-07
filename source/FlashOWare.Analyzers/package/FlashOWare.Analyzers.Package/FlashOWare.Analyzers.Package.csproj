@@ -6,11 +6,20 @@
 
   <PropertyGroup>
     <IsPackable>true</IsPackable>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn.csproj" />
-    <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn4_13.csproj" />
+    <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn4_13.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn4.13/" />
   </ItemGroup>
+
+  <Target Name="_AddAnalyzersToOutput">
+    <ItemGroup>
+      <TfmSpecificPackageFile Include="$(OutputPath)/roslyn4.13/FlashOWare.Analyzers.CSharp.Roslyn4_13.dll" PackagePath="analyzers/dotnet/roslyn4.13/cs/" />
+    </ItemGroup>
+  </Target>
 
 </Project>
