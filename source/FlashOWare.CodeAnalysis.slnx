@@ -1,2 +1,17 @@
 <Solution>
+  <Folder Name="/FlashOWare.Analyzers/" />
+  <Folder Name="/FlashOWare.Analyzers/demo/">
+    <Project Path="FlashOWare.Analyzers/demo/FlashOWare.Analyzers.CSharp.Demo.WebApiApp/FlashOWare.Analyzers.CSharp.Demo.WebApiApp.csproj" />
+  </Folder>
+  <Folder Name="/FlashOWare.Analyzers/package/">
+    <Project Path="FlashOWare.Analyzers/package/FlashOWare.Analyzers.Package/FlashOWare.Analyzers.Package.csproj" />
+  </Folder>
+  <Folder Name="/FlashOWare.Analyzers/roslyn/">
+    <Project Path="FlashOWare.Analyzers/roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn.csproj" />
+    <Project Path="FlashOWare.Analyzers/roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn4_13.csproj" />
+  </Folder>
+  <Folder Name="/FlashOWare.Analyzers/test/">
+    <Project Path="FlashOWare.Analyzers/test/FlashOWare.Analyzers.CSharp.Roslyn.Tests/FlashOWare.Analyzers.CSharp.Roslyn.Tests.csproj" />
+    <Project Path="FlashOWare.Analyzers/test/FlashOWare.Analyzers.CSharp.Roslyn.Tests/FlashOWare.Analyzers.CSharp.Roslyn4_13.Tests.csproj" />
+  </Folder>
 </Solution>
