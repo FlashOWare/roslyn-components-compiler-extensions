@@ -4,3 +4,8 @@ GET {{FlashOWare.Analyzers.CSharp.Demo.WebApiApp_HostAddress}}/
 Accept: application/json
 
 ###
+
+GET {{FlashOWare.Analyzers.CSharp.Demo.WebApiApp_HostAddress}}/assembly
+Accept: application/json
+
+###
