@@ -1,0 +1,4 @@
+# Changelog
+FlashOWare.Analyzers
+
+## Unreleased
