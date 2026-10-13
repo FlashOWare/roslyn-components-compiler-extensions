@@ -1,0 +1,13 @@
+{
+  "solution": {
+    "path": "..\\FlashOWare.CodeAnalysis.slnx",
+    "projects": [
+      "FlashOWare.Analyzers\\demo\\FlashOWare.Analyzers.CSharp.Demo.WebApiApp\\FlashOWare.Analyzers.CSharp.Demo.WebApiApp.csproj",
+      "FlashOWare.Analyzers\\package\\FlashOWare.Analyzers.Package\\FlashOWare.Analyzers.Package.csproj",
+      "FlashOWare.Analyzers\\roslyn\\FlashOWare.Analyzers.CSharp.Roslyn\\FlashOWare.Analyzers.CSharp.Roslyn.csproj",
+      "FlashOWare.Analyzers\\roslyn\\FlashOWare.Analyzers.CSharp.Roslyn\\FlashOWare.Analyzers.CSharp.Roslyn4_13.csproj",
+      "FlashOWare.Analyzers\\test\\FlashOWare.Analyzers.CSharp.Roslyn.Tests\\FlashOWare.Analyzers.CSharp.Roslyn.Tests.csproj",
+      "FlashOWare.Analyzers\\test\\FlashOWare.Analyzers.CSharp.Roslyn.Tests\\FlashOWare.Analyzers.CSharp.Roslyn4_13.Tests.csproj"
+    ]
+  }
+}

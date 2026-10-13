@@ -1,0 +1,9 @@
+<Project>
+
+  <PropertyGroup>
+    <Company>FlashOWare</Company>
+    <Product>FlashOWare.CodeAnalysis</Product>
+    <Copyright>© FlashOWare and Contributors.</Copyright>
+  </PropertyGroup>
+
+</Project>
