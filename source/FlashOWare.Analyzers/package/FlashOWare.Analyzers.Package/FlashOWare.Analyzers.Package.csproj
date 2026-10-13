@@ -18,10 +18,7 @@
     <PackageId>FlashOWare.Analyzers</PackageId>
     <Title>FlashOWare.Analyzers</Title>
     <Authors>FlashOWare;Flash0ver</Authors>
-    <Company>FlashOWare</Company>
-    <Product>FlashOWare.CodeAnalysis</Product>
     <Description>Common compiler extensions for C# and Visual Basic projects, including Diagnostic-Analyzers &amp; Diagnostic-Suppressors, also Providers for Code-Refactorings, Code-Fixes, and Completions.</Description>
-    <Copyright>© FlashOWare and Contributors.</Copyright>
     <PackageProjectUrl>https://github.com/FlashOWare/roslyn-components-compiler-extensions-documentation</PackageProjectUrl>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>

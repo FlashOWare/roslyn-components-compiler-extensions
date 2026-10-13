@@ -28,4 +28,6 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
+  <Import Project="$(MSBuildThisFileDirectory)shared/Assembly.Attributes.props" />
+
 </Project>
