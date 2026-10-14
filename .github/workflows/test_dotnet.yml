@@ -11,14 +11,15 @@ permissions:
 
 jobs:
   test_dotnet:
-    name: test dotnet in $env:Configuration on $env:os
-    runs-on: $env:os
+    name: test dotnet in ${{ matrix.configuration }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-24.04, windows-2025, macos-26]
         configuration: [Debug, Release]
     env:
       Solution_File: ./source/FlashOWare.CodeAnalysis.slnx
+      Build_Configuration: ${{ matrix.configuration }}
 
     steps:
     - name: Checkout
@@ -32,6 +33,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore $env:Solution_File
     - name: Build
-      run: dotnet build $env:Solution_File --configuration $env:Configuration --no-restore --nologo
+      run: dotnet build $env:Solution_File --configuration $env:Build_Configuration --no-restore --nologo
     - name: Test
-      run: dotnet test $env:Solution_File --configuration $env:Configuration --no-build --verbosity normal
+      run: dotnet test $env:Solution_File --configuration $env:Build_Configuration --no-build --verbosity normal
