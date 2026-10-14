@@ -14,6 +14,7 @@ jobs:
     name: test dotnet in ${{ matrix.configuration }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         os: [ubuntu-24.04, windows-2025, macos-26]
         configuration: [Debug, Release]
