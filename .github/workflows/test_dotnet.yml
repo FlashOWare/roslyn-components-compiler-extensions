@@ -30,9 +30,11 @@ jobs:
       uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
       with:
         global-json-file: ./global.json
+    - name: .NET information
+      run: dotnet --info
     - name: Restore dependencies
       run: dotnet restore ${{ env.Solution_File }}
-    - name: Build
+    - name: Build Solution
       run: dotnet build ${{ env.Solution_File }} --configuration ${{ env.Build_Configuration }} --no-restore --nologo
-    - name: Test
+    - name: Test Solution
       run: dotnet test ${{ env.Solution_File }} --configuration ${{ env.Build_Configuration }} --no-build --verbosity normal
