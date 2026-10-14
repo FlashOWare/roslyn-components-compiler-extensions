@@ -1,7 +1,8 @@
 ﻿<Project Sdk="MSTest.Sdk/4.5.1">
 
   <PropertyGroup>
-    <TargetFrameworks>net9.0;net8.0;net472</TargetFrameworks>
+    <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
+    <TargetFrameworks Condition="$([System.OperatingSystem]::IsWindows())">$(TargetFrameworks);net472</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup>
