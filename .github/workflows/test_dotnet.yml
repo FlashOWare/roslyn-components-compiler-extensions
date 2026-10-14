@@ -31,8 +31,8 @@ jobs:
       with:
         global-json-file: ./global.json
     - name: Restore dependencies
-      run: dotnet restore $env:Solution_File
+      run: dotnet restore ${{ env.Solution_File }}
     - name: Build
-      run: dotnet build $env:Solution_File --configuration $env:Build_Configuration --no-restore --nologo
+      run: dotnet build ${{ env.Solution_File }} --configuration ${{ env.Build_Configuration }} --no-restore --nologo
     - name: Test
-      run: dotnet test $env:Solution_File --configuration $env:Build_Configuration --no-build --verbosity normal
+      run: dotnet test ${{ env.Solution_File }} --configuration ${{ env.Build_Configuration }} --no-build --verbosity normal
