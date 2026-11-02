@@ -24,7 +24,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/FlashOWare/roslyn-components-compiler-extensions.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>f[0];F0;FlashOWare;CodeAnalysis;Roslyn;Analyzers;CSharp;C#;</PackageTags>
+    <PackageTags>f[0];F0;FlashOWare;CodeAnalysis;Roslyn;Analyzers;CSharp;VisualBasic;C#;</PackageTags>
     <PackageReleaseNotes>https://github.com/FlashOWare/roslyn-components-compiler-extensions/blob/main/source/FlashOWare.Analyzers/CHANGELOG.md</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
