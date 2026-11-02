@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "demo": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.ConsoleApp\\FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.ConsoleApp.vbproj"
+    }
+  }
+}
