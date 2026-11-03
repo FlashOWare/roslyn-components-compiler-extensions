@@ -24,7 +24,6 @@ jobs:
 
     steps:
     - name: Set git-config core.longPaths (Windows)
-      uses: ./.github/actions/git-config-longpaths
       if: runner.os == 'Windows'
       shell: pwsh
       run: |
