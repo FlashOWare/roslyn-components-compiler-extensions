@@ -1,0 +1,29 @@
+<Project>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>FlashOWare;Flash0ver</Authors>
+    <RepositoryUrl>https://github.com/FlashOWare/roslyn-components-compiler-extensions.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageIcon>Icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Condition=" '$(VersionSuffix)' == '' " Include="$(MSBuildThisFileDirectory)../../resources/FlashOWare.png" Pack="true" PackagePath="/Icon.png" Visible="true" />
+    <None Condition=" '$(VersionSuffix)' != '' " Include="$(MSBuildThisFileDirectory)../../resources/FlashOWare-Preview.png" Pack="true" PackagePath="/Icon.png" Visible="true" />
+  </ItemGroup>
+
+</Project>

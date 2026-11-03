@@ -4,36 +4,27 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <Import Project="$(MSBuildThisFileDirectory)../../../shared/NuGet.Packages.props" />
+
   <PropertyGroup>
-    <IsPackable>true</IsPackable>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
     <DevelopmentDependency>true</DevelopmentDependency>
-    <Deterministic>true</Deterministic>
     <TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);_AddAnalyzersToOutput</TargetsForTfmSpecificContentInPackage>
   </PropertyGroup>
 
   <PropertyGroup>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>FlashOWare.Analyzers</PackageId>
     <Title>FlashOWare.Analyzers</Title>
-    <Authors>FlashOWare;Flash0ver</Authors>
     <Description>Common compiler extensions for C# and Visual Basic projects, including Diagnostic-Analyzers &amp; Diagnostic-Suppressors, also Providers for Code-Refactorings, Code-Fixes, and Completions.</Description>
     <PackageProjectUrl>https://github.com/FlashOWare/roslyn-components-compiler-extensions-documentation</PackageProjectUrl>
-    <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/FlashOWare/roslyn-components-compiler-extensions.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
     <PackageTags>f[0];F0;FlashOWare;CodeAnalysis;Roslyn;Analyzers;CSharp;VisualBasic;C#;</PackageTags>
     <PackageReleaseNotes>https://github.com/FlashOWare/roslyn-components-compiler-extensions/blob/main/source/FlashOWare.Analyzers/CHANGELOG.md</PackageReleaseNotes>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="/README.md" Visible="true" />
-    <None Condition=" '$(VersionSuffix)' == '' " Include="../../../../resources/FlashOWare.png" Pack="true" PackagePath="/Icon.png" Visible="true" />
-    <None Condition=" '$(VersionSuffix)' != '' " Include="../../../../resources/FlashOWare-Preview.png" Pack="true" PackagePath="/Icon.png" Visible="true" />
   </ItemGroup>
 
   <ItemGroup>
