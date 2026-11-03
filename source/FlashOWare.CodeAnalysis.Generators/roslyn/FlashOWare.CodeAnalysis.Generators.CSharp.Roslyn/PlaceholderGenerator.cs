@@ -14,8 +14,15 @@ public sealed class PlaceholderGenerator : IIncrementalGenerator
 			string source = """
 				namespace Generated;
 
-				public sealed class Placeholder(int number)
+				public sealed class Placeholder
 				{
+					private readonly int number;
+
+					public Placeholder(int number)
+					{
+						this.number = number;
+					}
+
 					public override string ToString() => $"{number}";
 				}
 				""";
