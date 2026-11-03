@@ -23,9 +23,14 @@ jobs:
       Build_Configuration: ${{ matrix.configuration }}
 
     steps:
-    - name: Set core.longPaths
+    - name: Set git-config core.longPaths (Windows)
       uses: ./.github/actions/git-config-longpaths
       if: runner.os == 'Windows'
+      shell: pwsh
+      run: |
+        git config --system --get core.longPaths
+        git config --system core.longPaths true
+        git config --system --get core.longPaths
     - name: Checkout
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
