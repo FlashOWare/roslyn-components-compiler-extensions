@@ -1,19 +1,12 @@
 ﻿<Project Sdk="MSTest.Sdk/4.5.1">
 
   <PropertyGroup>
-    <TargetFramework Condition="!$([System.OperatingSystem]::IsWindows())">netcoreapp3.1</TargetFramework>
-    <TargetFrameworks Condition="$([System.OperatingSystem]::IsWindows())">netcoreapp3.1;net472</TargetFrameworks>
-    <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+    <TargetFramework Condition="!$([System.OperatingSystem]::IsWindows())">net8.0</TargetFramework>
+    <TargetFrameworks Condition="$([System.OperatingSystem]::IsWindows())">net8.0;net472</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup>
     <NoWarn>$(NoWarn);CA1515;CA1707</NoWarn>
-    <NoWarn>$(NoWarn);NU1701</NoWarn>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <CheckEolTargetFramework>false</CheckEolTargetFramework>
-    <SuppressTfmSupportBuildErrors>true</SuppressTfmSupportBuildErrors>
   </PropertyGroup>
 
   <ItemGroup>
