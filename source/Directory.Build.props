@@ -1,10 +1,18 @@
 <Project>
 
   <PropertyGroup>
-    <LangVersion>14.0</LangVersion>
+    <LangVersion Condition=" '$(MSBuildProjectExtension)' == '.csproj' ">14.0</LangVersion>
+    <LangVersion Condition=" '$(MSBuildProjectExtension)' == '.vbproj' ">17.13</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Nullable Condition=" '$(MSBuildProjectExtension)' == '.csproj' ">enable</Nullable>
+    <ImplicitUsings Condition=" '$(MSBuildProjectExtension)' == '.csproj' ">enable</ImplicitUsings>
   </PropertyGroup>
 
   <PropertyGroup>

@@ -1,7 +1,7 @@
 namespace FlashOWare.Analyzers.CSharp.Roslyn.Tests;
 
 [TestClass]
-public class PlaceholderTests
+public sealed class PlaceholderTests
 {
 	[TestMethod]
 	public void PlaceholderTest()

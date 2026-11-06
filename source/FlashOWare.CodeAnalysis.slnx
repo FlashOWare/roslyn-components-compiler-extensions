@@ -14,4 +14,28 @@
     <Project Path="FlashOWare.Analyzers/test/FlashOWare.Analyzers.CSharp.Roslyn.Tests/FlashOWare.Analyzers.CSharp.Roslyn.Tests.csproj" />
     <Project Path="FlashOWare.Analyzers/test/FlashOWare.Analyzers.CSharp.Roslyn.Tests/FlashOWare.Analyzers.CSharp.Roslyn4_13.Tests.csproj" />
   </Folder>
+  <Folder Name="/FlashOWare.CodeAnalysis.Generators/" />
+  <Folder Name="/FlashOWare.CodeAnalysis.Generators/demo/">
+    <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.CSharp.Demo.ConsoleApp/FlashOWare.CodeAnalysis.Generators.CSharp.Demo.ConsoleApp.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.CSharp.Demo.RoslynComponent/FlashOWare.CodeAnalysis.Generators.CSharp.Demo.RoslynComponent.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.ConsoleApp/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.ConsoleApp.vbproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent.csproj" />
+  </Folder>
+  <Folder Name="/FlashOWare.CodeAnalysis.Generators/package/">
+    <Project Path="FlashOWare.CodeAnalysis.Generators/package/FlashOWare.CodeAnalysis.Generators.Package/FlashOWare.CodeAnalysis.Generators.Package.csproj" />
+  </Folder>
+  <Folder Name="/FlashOWare.CodeAnalysis.Generators/roslyn/">
+    <Project Path="FlashOWare.CodeAnalysis.Generators/roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn4_0.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn4_0.csproj" />
+  </Folder>
+  <Folder Name="/FlashOWare.CodeAnalysis.Generators/test/">
+    <Project Path="FlashOWare.CodeAnalysis.Generators/test/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn.Tests/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn.Tests.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/test/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn.Tests/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn4_0.Tests.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/test/FlashOWare.CodeAnalysis.Generators.CSharp.Tests/FlashOWare.CodeAnalysis.Generators.CSharp.Tests.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/test/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn.Tests/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn.Tests.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/test/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn.Tests/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn4_0.Tests.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/test/FlashOWare.CodeAnalysis.Generators.VisualBasic.Tests/FlashOWare.CodeAnalysis.Generators.VisualBasic.Tests.vbproj" />
+  </Folder>
 </Solution>
