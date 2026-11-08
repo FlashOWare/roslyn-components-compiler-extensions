@@ -33,11 +33,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn3_11.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn3.11/" />
     <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn4_13.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn4.13/" />
   </ItemGroup>
 
   <Target Name="_AddAnalyzersToOutput">
     <ItemGroup>
+      <TfmSpecificPackageFile Include="$(OutputPath)/roslyn3.11/FlashOWare.Analyzers.CSharp.Roslyn3_11.dll" PackagePath="analyzers/dotnet/roslyn3.11/cs/" />
       <TfmSpecificPackageFile Include="$(OutputPath)/roslyn4.13/FlashOWare.Analyzers.CSharp.Roslyn4_13.dll" PackagePath="analyzers/dotnet/roslyn4.13/cs/" />
     </ItemGroup>
   </Target>

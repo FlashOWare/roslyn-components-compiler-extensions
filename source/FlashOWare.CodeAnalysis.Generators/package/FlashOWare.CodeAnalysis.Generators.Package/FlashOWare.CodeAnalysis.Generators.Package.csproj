@@ -33,13 +33,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../../roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn3_11.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn3.11/" />
     <ProjectReference Include="../../roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn4_0.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn4.0/" />
+    <ProjectReference Include="../../roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn3_11.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn3.11/" />
     <ProjectReference Include="../../roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn4_0.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn4.0/" />
   </ItemGroup>
 
   <Target Name="_AddAnalyzersToOutput">
     <ItemGroup>
+      <TfmSpecificPackageFile Include="$(OutputPath)/roslyn3.11/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn3_11.dll" PackagePath="analyzers/dotnet/roslyn3.11/cs/" />
       <TfmSpecificPackageFile Include="$(OutputPath)/roslyn4.0/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn4_0.dll" PackagePath="analyzers/dotnet/roslyn4.0/cs/" />
+      <TfmSpecificPackageFile Include="$(OutputPath)/roslyn3.11/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn3_11.dll" PackagePath="analyzers/dotnet/roslyn3.11/vb/" />
       <TfmSpecificPackageFile Include="$(OutputPath)/roslyn4.0/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn4_0.dll" PackagePath="analyzers/dotnet/roslyn4.0/vb/" />
     </ItemGroup>
   </Target>
