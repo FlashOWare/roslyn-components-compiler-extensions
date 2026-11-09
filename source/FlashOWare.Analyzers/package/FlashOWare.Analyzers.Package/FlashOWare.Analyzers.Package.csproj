@@ -18,13 +18,13 @@
     <Title>FlashOWare.Analyzers</Title>
     <Description>Common compiler extensions for C# and Visual Basic projects, including Diagnostic-Analyzers &amp; Diagnostic-Suppressors, also Providers for Code-Refactorings, Code-Fixes, and Completions.</Description>
     <PackageProjectUrl>https://github.com/FlashOWare/roslyn-components-compiler-extensions-documentation</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>PACKAGE.md</PackageReadmeFile>
     <PackageTags>f[0];F0;FlashOWare;CodeAnalysis;Roslyn;Analyzers;CSharp;VisualBasic;C#;</PackageTags>
     <PackageReleaseNotes>https://github.com/FlashOWare/roslyn-components-compiler-extensions/blob/main/source/FlashOWare.Analyzers/CHANGELOG.md</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../README.md" Pack="true" PackagePath="/README.md" Visible="true" />
+    <None Include="../../README.md" Pack="true" PackagePath="/PACKAGE.md" Visible="true" />
   </ItemGroup>
 
   <ItemGroup>
