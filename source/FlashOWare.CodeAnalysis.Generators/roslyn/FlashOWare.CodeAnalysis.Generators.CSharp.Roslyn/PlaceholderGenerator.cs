@@ -13,18 +13,19 @@ public sealed class PlaceholderGenerator : IIncrementalGenerator
 		context.RegisterPostInitializationOutput(static (IncrementalGeneratorPostInitializationContext context) =>
 		{
 			string source = """
-				namespace Generated;
-
-				public sealed class Placeholder
+				namespace Generated
 				{
-					private readonly int number;
-
-					public Placeholder(int number)
+					public sealed class Placeholder
 					{
-						this.number = number;
-					}
+						private readonly int number;
 
-					public override string ToString() => $"{number}";
+						public Placeholder(int number)
+						{
+							this.number = number;
+						}
+
+						public override string ToString() => $"{number}";
+					}
 				}
 				""";
 			context.AddSource("Placeholder.g.cs", SourceText.From(source, Encoding.UTF8));
@@ -40,18 +41,19 @@ public sealed class PlaceholderGenerator : ISourceGenerator
 		context.RegisterForPostInitialization(static (GeneratorPostInitializationContext context) =>
 		{
 			string source = """
-				namespace Generated;
-
-				public sealed class Placeholder
+				namespace Generated
 				{
-					private readonly int number;
-
-					public Placeholder(int number)
+					public sealed class Placeholder
 					{
-						this.number = number;
-					}
+						private readonly int number;
 
-					public override string ToString() => $"{number}";
+						public Placeholder(int number)
+						{
+							this.number = number;
+						}
+
+						public override string ToString() => $"{number}";
+					}
 				}
 				""";
 			context.AddSource("Placeholder.g.cs", SourceText.From(source, Encoding.UTF8));
