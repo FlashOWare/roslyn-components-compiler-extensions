@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <IsRoslynComponent>true</IsRoslynComponent>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <NoWarn>$(NoWarn);CA1707</NoWarn>
   </PropertyGroup>
 
