@@ -18,28 +18,32 @@
     <Title>FlashOWare.CodeAnalysis.Generators</Title>
     <Description>Specialized source generators that support building source generators and other compiler extensions for C# and Visual Basic projects.</Description>
     <PackageProjectUrl>https://github.com/FlashOWare/roslyn-components-compiler-extensions-documentation</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>PACKAGE.md</PackageReadmeFile>
     <PackageTags>f[0];F0;FlashOWare;CodeAnalysis;Roslyn;Analyzers;Generators;CSharp;VisualBasic;C#;</PackageTags>
     <PackageReleaseNotes>https://github.com/FlashOWare/roslyn-components-compiler-extensions/blob/main/source/FlashOWare.CodeAnalysis.Generators/CHANGELOG.md</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../README.md" Pack="true" PackagePath="/README.md" Visible="true" />
+    <None Include="../../README.md" Pack="true" PackagePath="/PACKAGE.md" Visible="true" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="build/*.props" Pack="true" PackagePath="/build" Visible="true" />
-    <None Include="build/*.targets" Pack="true" PackagePath="/build" Visible="true" />
+    <None Include="build/*.props" Pack="true" PackagePath="/buildTransitive" Visible="true" />
+    <None Include="build/*.targets" Pack="true" PackagePath="/buildTransitive" Visible="true" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../../roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn3_11.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn3.11/" />
     <ProjectReference Include="../../roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn4_0.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn4.0/" />
+    <ProjectReference Include="../../roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn3_11.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn3.11/" />
     <ProjectReference Include="../../roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn4_0.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn4.0/" />
   </ItemGroup>
 
   <Target Name="_AddAnalyzersToOutput">
     <ItemGroup>
+      <TfmSpecificPackageFile Include="$(OutputPath)/roslyn3.11/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn3_11.dll" PackagePath="analyzers/dotnet/roslyn3.11/cs/" />
       <TfmSpecificPackageFile Include="$(OutputPath)/roslyn4.0/FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn4_0.dll" PackagePath="analyzers/dotnet/roslyn4.0/cs/" />
+      <TfmSpecificPackageFile Include="$(OutputPath)/roslyn3.11/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn3_11.dll" PackagePath="analyzers/dotnet/roslyn3.11/vb/" />
       <TfmSpecificPackageFile Include="$(OutputPath)/roslyn4.0/FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn4_0.dll" PackagePath="analyzers/dotnet/roslyn4.0/vb/" />
     </ItemGroup>
   </Target>

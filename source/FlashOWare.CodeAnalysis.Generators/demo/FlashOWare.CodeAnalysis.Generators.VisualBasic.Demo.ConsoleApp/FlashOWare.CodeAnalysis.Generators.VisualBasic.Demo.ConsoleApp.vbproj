@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" SetTargetFramework="TargetFramework=netstandard2.0" />
+    <ProjectReference Include="../FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent.vbproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" SetTargetFramework="TargetFramework=netstandard2.0" />
   </ItemGroup>
 
 </Project>

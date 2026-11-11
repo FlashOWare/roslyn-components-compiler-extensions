@@ -1,2 +1,15 @@
 <Project>
+
+  <Target Name="_FlashOWare_Analyzers_GatherAnalyzers" Condition="'$(SupportsRoslynComponentVersioning)' != 'true'">
+    <ItemGroup>
+      <_FlashOWare_Analyzers_Analyzer Include="@(Analyzer)" Condition="'%(Analyzer.NuGetPackageId)' == 'FlashOWare.Analyzers'" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="_FlashOWare_Analyzers_AnalyzerMultiTargeting" Condition="'$(SupportsRoslynComponentVersioning)' != 'true'" AfterTargets="ResolvePackageDependenciesForBuild;ResolveNuGetPackageAssets" DependsOnTargets="_FlashOWare_Analyzers_GatherAnalyzers">
+    <ItemGroup>
+      <Analyzer Remove="@(_FlashOWare_Analyzers_Analyzer)" Condition="$([System.String]::Copy('%(_FlashOWare_Analyzers_Analyzer.Identity)').IndexOf('roslyn3.11')) &lt; 0" />
+    </ItemGroup>
+  </Target>
+
 </Project>

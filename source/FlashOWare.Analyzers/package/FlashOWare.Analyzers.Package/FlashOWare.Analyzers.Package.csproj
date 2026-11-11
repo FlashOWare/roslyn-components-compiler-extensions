@@ -18,26 +18,28 @@
     <Title>FlashOWare.Analyzers</Title>
     <Description>Common compiler extensions for C# and Visual Basic projects, including Diagnostic-Analyzers &amp; Diagnostic-Suppressors, also Providers for Code-Refactorings, Code-Fixes, and Completions.</Description>
     <PackageProjectUrl>https://github.com/FlashOWare/roslyn-components-compiler-extensions-documentation</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>PACKAGE.md</PackageReadmeFile>
     <PackageTags>f[0];F0;FlashOWare;CodeAnalysis;Roslyn;Analyzers;CSharp;VisualBasic;C#;</PackageTags>
     <PackageReleaseNotes>https://github.com/FlashOWare/roslyn-components-compiler-extensions/blob/main/source/FlashOWare.Analyzers/CHANGELOG.md</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="../../README.md" Pack="true" PackagePath="/README.md" Visible="true" />
+    <None Include="../../README.md" Pack="true" PackagePath="/PACKAGE.md" Visible="true" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="build/*.props" Pack="true" PackagePath="/build" Visible="true" />
-    <None Include="build/*.targets" Pack="true" PackagePath="/build" Visible="true" />
+    <None Include="build/*.props" Pack="true" PackagePath="/buildTransitive" Visible="true" />
+    <None Include="build/*.targets" Pack="true" PackagePath="/buildTransitive" Visible="true" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn3_11.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn3.11/" />
     <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn4_13.csproj" SetTargetFramework="TargetFramework=netstandard2.0" DestinationSubDirectory="roslyn4.13/" />
   </ItemGroup>
 
   <Target Name="_AddAnalyzersToOutput">
     <ItemGroup>
+      <TfmSpecificPackageFile Include="$(OutputPath)/roslyn3.11/FlashOWare.Analyzers.CSharp.Roslyn3_11.dll" PackagePath="analyzers/dotnet/roslyn3.11/cs/" />
       <TfmSpecificPackageFile Include="$(OutputPath)/roslyn4.13/FlashOWare.Analyzers.CSharp.Roslyn4_13.dll" PackagePath="analyzers/dotnet/roslyn4.13/cs/" />
     </ItemGroup>
   </Target>
