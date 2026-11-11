@@ -21,7 +21,7 @@
     <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.CSharp.Demo.ConsoleApp/FlashOWare.CodeAnalysis.Generators.CSharp.Demo.ConsoleApp.csproj" />
     <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.CSharp.Demo.RoslynComponent/FlashOWare.CodeAnalysis.Generators.CSharp.Demo.RoslynComponent.csproj" />
     <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.ConsoleApp/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.ConsoleApp.vbproj" />
-    <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent.csproj" />
+    <Project Path="FlashOWare.CodeAnalysis.Generators/demo/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent/FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent.vbproj" />
   </Folder>
   <Folder Name="/FlashOWare.CodeAnalysis.Generators/package/">
     <Project Path="FlashOWare.CodeAnalysis.Generators/package/FlashOWare.CodeAnalysis.Generators.Package/FlashOWare.CodeAnalysis.Generators.Package.csproj" />

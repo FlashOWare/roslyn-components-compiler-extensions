@@ -5,7 +5,7 @@
       "FlashOWare.CodeAnalysis.Generators\\demo\\FlashOWare.CodeAnalysis.Generators.CSharp.Demo.ConsoleApp\\FlashOWare.CodeAnalysis.Generators.CSharp.Demo.ConsoleApp.csproj",
       "FlashOWare.CodeAnalysis.Generators\\demo\\FlashOWare.CodeAnalysis.Generators.CSharp.Demo.RoslynComponent\\FlashOWare.CodeAnalysis.Generators.CSharp.Demo.RoslynComponent.csproj",
       "FlashOWare.CodeAnalysis.Generators\\demo\\FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.ConsoleApp\\FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.ConsoleApp.vbproj",
-      "FlashOWare.CodeAnalysis.Generators\\demo\\FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent\\FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent.csproj",
+      "FlashOWare.CodeAnalysis.Generators\\demo\\FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent\\FlashOWare.CodeAnalysis.Generators.VisualBasic.Demo.RoslynComponent.vbproj",
       "FlashOWare.CodeAnalysis.Generators\\package\\FlashOWare.CodeAnalysis.Generators.Package\\FlashOWare.CodeAnalysis.Generators.Package.csproj",
       "FlashOWare.CodeAnalysis.Generators\\roslyn\\FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn\\FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn.csproj",
       "FlashOWare.CodeAnalysis.Generators\\roslyn\\FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn\\FlashOWare.CodeAnalysis.Generators.CSharp.Roslyn3_11.csproj",
