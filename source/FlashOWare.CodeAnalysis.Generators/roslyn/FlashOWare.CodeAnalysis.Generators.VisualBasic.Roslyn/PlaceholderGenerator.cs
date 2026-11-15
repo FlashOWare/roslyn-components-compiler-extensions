@@ -4,6 +4,7 @@ using Microsoft.CodeAnalysis.Text;
 
 namespace FlashOWare.CodeAnalysis.Generators.VisualBasic.Roslyn;
 
+#if ROSLYN4_0_OR_GREATER
 [Generator(LanguageNames.VisualBasic)]
 public sealed class PlaceholderGenerator : IIncrementalGenerator
 {
@@ -30,3 +31,35 @@ public sealed class PlaceholderGenerator : IIncrementalGenerator
 		});
 	}
 }
+#else
+[Generator(LanguageNames.VisualBasic)]
+public sealed class PlaceholderGenerator : ISourceGenerator
+{
+	public void Initialize(GeneratorInitializationContext context)
+	{
+		context.RegisterForPostInitialization(static (GeneratorPostInitializationContext context) =>
+		{
+			string source = """
+				Namespace Generated
+					Public NotInheritable Class Placeholder
+						Private ReadOnly number As Integer
+
+						Public Sub New(ByVal number As Integer)
+							Me.number = number
+						End Sub
+
+						Public Overrides Function ToString() As String
+							Return $"{number}"
+						End Function
+					End Class
+				End Namespace
+				""";
+			context.AddSource("Placeholder.g.vb", SourceText.From(source, Encoding.UTF8));
+		});
+	}
+
+	public void Execute(GeneratorExecutionContext context)
+	{
+	}
+}
+#endif

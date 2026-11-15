@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <DefineConstants>$(DefineConstants);ROSLYN4_0_OR_GREATER</DefineConstants>
+    <DefineConstants>$(DefineConstants);ROSLYN3_11_OR_GREATER;ROSLYN4_0_OR_GREATER</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>

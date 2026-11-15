@@ -27,12 +27,12 @@ app.MapGet("/", static Ok<RootPayload> (HttpContext context) =>
 	.WithName("Get");
 
 app.MapGet("/assembly", static Ok<AssemblyPayload> (HttpContext context) =>
-{
-	Assembly assembly = typeof(Program).Assembly;
-	AssemblyName name = assembly.GetName();
-	AssemblyPayload payload = new(name.Name, name.Version, name.CultureName);
-	return TypedResults.Ok(payload);
-})
+	{
+		Assembly assembly = typeof(Program).Assembly;
+		AssemblyName name = assembly.GetName();
+		AssemblyPayload payload = new(name.Name, name.Version, name.CultureName);
+		return TypedResults.Ok(payload);
+	})
 	.WithName("GetAssembly");
 app.Run();
 
