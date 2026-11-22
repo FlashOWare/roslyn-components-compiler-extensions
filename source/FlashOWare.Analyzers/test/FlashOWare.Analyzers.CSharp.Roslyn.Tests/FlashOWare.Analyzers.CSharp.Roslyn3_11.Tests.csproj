@@ -17,4 +17,9 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" VersionOverride="3.11.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Analyzers/InterceptorMethodDiagnosticAnalyzerTests.cs" />
+    <Compile Remove="Generators/InterceptorMethodGenerator.cs" />
+  </ItemGroup>
+
 </Project>

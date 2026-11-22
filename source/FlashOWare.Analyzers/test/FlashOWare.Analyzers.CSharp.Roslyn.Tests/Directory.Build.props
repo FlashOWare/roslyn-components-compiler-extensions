@@ -5,4 +5,8 @@
 
   <Import Project="$(MSBuildThisFileDirectory)../../../shared/MSTest.Testing.props" />
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing" />
+  </ItemGroup>
+
 </Project>
