@@ -6,15 +6,15 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <NoWarn>$(NoWarn);CA1515</NoWarn>
+    <DefineConstants>$(DefineConstants);ROSLYN_LATEST</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../roslyn/FlashOWare.Analyzers.CSharp.Roslyn/FlashOWare.Analyzers.CSharp.Roslyn.csproj" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" />
   </ItemGroup>
 
 </Project>
