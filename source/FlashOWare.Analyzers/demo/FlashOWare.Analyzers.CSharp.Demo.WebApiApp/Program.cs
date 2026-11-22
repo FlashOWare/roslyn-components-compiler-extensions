@@ -34,6 +34,7 @@ app.MapGet("/assembly", static Ok<AssemblyPayload> (HttpContext context) =>
 		return TypedResults.Ok(payload);
 	})
 	.WithName("GetAssembly");
+
 app.Run();
 
 internal sealed record class RootPayload(string Text);
