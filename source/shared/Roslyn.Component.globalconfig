@@ -1,0 +1,8 @@
+is_global = true
+
+# CA1062: Validate arguments of public methods (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1062)
+dotnet_diagnostic.CA1062.severity = warning
+dotnet_code_quality.CA1062.excluded_type_names_with_derived_types = T:Microsoft.CodeAnalysis.Diagnostics.DiagnosticAnalyzer
+
+# RS1041: Compiler extensions should be implemented in assemblies targeting netstandard2.0 (https://github.com/dotnet/roslyn/blob/main/docs/roslyn-analyzers/rules/RS1041.md)
+dotnet_diagnostic.RS1041.severity = none
