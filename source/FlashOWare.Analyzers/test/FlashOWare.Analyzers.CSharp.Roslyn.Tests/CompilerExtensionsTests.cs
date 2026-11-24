@@ -13,6 +13,7 @@ public sealed class CompilerExtensionsTests
 		IEnumerable<Assembly> assemblies = AppDomain.CurrentDomain.GetAssemblies().Where(static (Assembly assembly) => assembly.FullName!.StartsWith("FlashOWare.Analyzers.CSharp.Roslyn", StringComparison.Ordinal));
 		Assert.ContainsSingle(assemblies, "Delete this preprocessor directive when the Roslyn 3.11 Component also contains a Compiler Extension.");
 		return;
+#pragma warning disable CS0162 // Unreachable code detected
 #endif
 
 		Assembly assembly = AppDomain.CurrentDomain.GetAssemblies().Single(static (Assembly assembly) =>
