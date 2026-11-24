@@ -1,0 +1,17 @@
+<Project>
+
+  <PropertyGroup>
+    <IsRoslynComponent>true</IsRoslynComponent>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- CA1707: Identifiers should not contain underscores (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1707) -->
+    <NoWarn Condition="$(MSBuildProjectName.Contains('_'))">$(NoWarn);CA1707</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)Roslyn.Component.globalconfig" />
+  </ItemGroup>
+
+</Project>

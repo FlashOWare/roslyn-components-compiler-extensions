@@ -5,15 +5,6 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <IsRoslynComponent>true</IsRoslynComponent>
-    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <NoWarn>$(NoWarn);CA1707</NoWarn>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <DefineConstants>$(DefineConstants);ROSLYN3_11_OR_GREATER;ROSLYN4_0_OR_GREATER</DefineConstants>
   </PropertyGroup>
 

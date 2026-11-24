@@ -1,0 +1,19 @@
+<Project>
+
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"
+          Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../')) != ''" />
+
+  <Import Project="$(MSBuildThisFileDirectory)../../../shared/MSTest.Testing.props" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing" />
+  </ItemGroup>
+
+  <ItemGroup Label="Pin transitive dependencies with known vulnerabilities">
+    <PackageReference Include="System.Net.Http" Condition="'$(TargetFramework)' == 'net8.0'" />
+    <PackageReference Include="System.Private.Uri" Condition="'$(TargetFramework)' == 'net9.0' Or '$(TargetFramework)' == 'net8.0'" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Condition="'$(TargetFramework)' == 'net10.0' Or '$(TargetFramework)' == 'net9.0' Or '$(TargetFramework)' == 'net8.0'" />
+    <PackageReference Include="System.Text.RegularExpressions" Condition="'$(TargetFramework)' == 'net8.0'" />
+  </ItemGroup>
+
+</Project>

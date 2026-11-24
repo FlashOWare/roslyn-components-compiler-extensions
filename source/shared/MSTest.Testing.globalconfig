@@ -1,0 +1,11 @@
+is_global = true
+
+# CA1515: Consider making public types internal (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1515)
+dotnet_diagnostic.CA1515.severity = none
+
+# CA1707: Identifiers should not contain underscores (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1707)
+dotnet_diagnostic.CA1707.severity = none
+
+# CA2007: Consider calling ConfigureAwait on the awaited task (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2007)
+dotnet_diagnostic.CA2007.severity = none
+# Justification: MSTest has no 'SynchronizationContext' and the default 'TaskScheduler'
